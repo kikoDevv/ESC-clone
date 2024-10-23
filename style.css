@@ -1,0 +1,11 @@
+.navBar ul{
+    list-style-type: none;
+    background-color: rgb(174, 176, 189);
+}
+.navBar{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+.navBar a:hover{
+    background-color: rgb(183, 60, 60);
+}
