@@ -57,5 +57,54 @@ body{
     max-height: 468px;
     width: 100%;
     object-fit: cover;
+    position: relative;
 }
-
+.imgBox{
+    position: relative;
+}
+.btnsBox{
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateY(-50%);
+}
+#onlineBtn{
+    padding: 17px;
+    background-color: red;
+    color:white;
+    font-size:24px;
+    border: none;
+    border-radius:16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#onsiteBtn{
+    padding: 17px;
+    background-color: rgb(18, 175, 237);
+    color:white;
+    font-size:24px;
+    border: none;
+    border-radius:16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#onsiteBtn:hover{
+    background-color: rgb(56, 113, 144);
+    color: rgb(4, 251, 251);
+}
+#onlineBtn:hover{
+    background-color: rgb(107, 61, 61);
+    color: rgb(255, 0, 0);
+}
+@media (max-width: 490px){
+    .btnsBox{
+        display: grid;
+        padding-top: 50px;
+    }
+    #onlineBtn{
+        margin: 0px 0px 5px 0px;
+    }
+    #onsiteBtn{
+        margin: 5px 0px 0px 0px ;
+    }
+}
