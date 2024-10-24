@@ -1,14 +1,19 @@
 body{
     margin: 0px;
+    font-family: "Roboto";
 }
 .navBar ul{
+    display: flex;
+    justify-content: center;
     margin: 0px;
     list-style-type: none;
     color:white;
-    overflow: hidden;
+    justify-content: space-evenly;
 }
-.navBar li{
+.navLi{
     float: left;
+    padding: 30px;
+    border-radius: 10px;
 }
 .navLi:hover{
     background-color: rgb(183, 60, 60);
@@ -18,27 +23,28 @@ body{
 }
 #reqtangel{
     display: flex;
-    width: 128px;
-    height: 82px;
-    padding: 20px 0px 3px 5px;
+    padding: 0px 0px 5px 5px;
     background-color:rgb(116, 119, 151);
     align-items: end;
     border: 5px solid white;
-    border-radius: 25px;
+    border-radius: 15px;
+    width: 113px;
+    height: 67px;
 }
 .esc{
     background-color:rgb(251, 251, 251);
-    padding: 13px;
-    border-radius: 15px;
+    padding: 8px;
+    border-radius: 8px;
 }
 #logo-title{
     display: flex;
     align-items: end;
+    padding: 26px 0px 30px 27px;
 }
 #title{
     color:white;
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 40px;
+    padding-left: 30px;
 }
 
