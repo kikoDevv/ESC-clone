@@ -68,7 +68,7 @@ body{
     left: 50%;
     transform: translateY(-50%);
 }
-#onlineBtn{
+.onlineBtn{
     padding: 17px;
     background-color: red;
     color:white;
@@ -92,7 +92,7 @@ body{
     background-color: rgb(56, 113, 144);
     color: rgb(4, 251, 251);
 }
-#onlineBtn:hover{
+.onlineBtn:hover{
     background-color: rgb(107, 61, 61);
     color: rgb(255, 0, 0);
 }
@@ -131,4 +131,19 @@ body{
 #popularRightNowTitle{
     display: flex;
     justify-content: center;
+}
+.sliderBox{
+    max-width: 360px;
+    max-height: 440px;
+    display: grid;
+    object-fit: contain;
+}
+.slidImg{
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain;
+}
+.stars-participants {
+    display: flex;
+    justify-content: space-between;
 }
