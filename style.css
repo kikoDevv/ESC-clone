@@ -1,7 +1,6 @@
 body{
     margin: 0px;
     font-family: "Roboto";
-    padding-bottom: 200px; /*temporariry padding*/
 }
 .navBar ul{
     display: flex;
@@ -12,9 +11,7 @@ body{
     justify-content: space-evenly;
 }
 @media (max-width: 768px){
-    .navBar li {
-        display: none;
-    }
+    
 }
 .navLi{
     float: left;
@@ -41,6 +38,7 @@ body{
     background-color:rgb(251, 251, 251);
     padding: 8px;
     border-radius: 8px;
+    margin: 0px;
 }
 #logo-title{
     display: flex;
@@ -101,6 +99,9 @@ body{
     color: rgb(255, 0, 0);
 }
 @media (max-width: 768px){
+    .navBar li {
+        display: none;
+    }
     #title{
         max-width: 40px;
         font-size: 24px;
@@ -260,8 +261,11 @@ body{
 
 .foter{
     display: grid;
-    height: 460px;
-    background-color: red;
+    background-color: #011827;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
+}
+.foter{
+    padding: 100px;
+    color:white;
 }
