@@ -115,6 +115,9 @@ body{
     #onsiteBtn{
         margin: 5px 0px 0px 0px ;
     }
+    .imgCard{
+        order: -1;
+    }
 }
 .kommentBox {
     display: flex;
@@ -228,16 +231,37 @@ body{
     color:white;
     font-size: 2vw;
 }
-.boxes{
+
+
+
+
+.gridItem{
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.felt1{
-    display: flex;
+.imgCard{
+    max-width: 100%;
 }
-.imgHolder{
-    width: 640px;
-    height: 460px;
-    overflow: hidden;
-    position: relative;
+.infoCard{
+    display: grid;
+    align-content: space-evenly;
+    padding: 10px 100px 10px 100px;
+}
+.infoCard.div,button{
+    padding:15px;
+    border-color: white;
+    border-radius: 10px;
+    background-color: red;
+    color:white;
+    font-weight: bold;
 }
 
+
+
+.foter{
+    display: grid;
+    height: 460px;
+    background-color: red;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+}
