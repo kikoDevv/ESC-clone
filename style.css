@@ -1,3 +1,8 @@
+:root{
+    --redBtnColor: #E3170A;
+    --blueBtnColor: #8ACFE5;
+    --backgroundColor:#011827;
+}
 body{
     margin: 0px;
     font-family: "Roboto";
@@ -10,9 +15,6 @@ body{
     color:white;
     justify-content: space-evenly;
 }
-@media (max-width: 768px){
-    
-}
 .navLi{
     float: left;
     padding: 30px;
@@ -22,12 +24,12 @@ body{
     background-color: rgb(183, 60, 60);
 }
 .headSection{
-    background-color:#011827;
+    background-color: var(--backgroundColor);
 }
 #reqtangel{
     display: flex;
     padding: 0px 0px 5px 5px;
-    background-color:rgb(116, 119, 151);
+    background-color:var(--backgroundColor);
     align-items: end;
     border: 5px solid white;
     border-radius: 15px;
@@ -72,21 +74,23 @@ body{
 }
 .onlineBtn{
     padding: 17px;
-    background-color: red;
+    background-color: var(--redBtnColor);
     color:white;
     font-size:24px;
     border: none;
-    border-radius:16px;
+    border-radius:5px;
     cursor: pointer;
     margin-right: 10px;
+    max-width: fit-content;
+    justify-self: right;
 }
 #onsiteBtn{
     padding: 17px;
-    background-color: rgb(18, 175, 237);
-    color:white;
+    background-color: var(--blueBtnColor);
+    color:rgb(0, 0, 0);
     font-size:24px;
     border: none;
-    border-radius:16px;
+    border-radius:px;
     cursor: pointer;
     margin-left: 10px;
 }
@@ -98,28 +102,7 @@ body{
     background-color: rgb(107, 61, 61);
     color: rgb(255, 0, 0);
 }
-@media (max-width: 768px){
-    .navBar li {
-        display: none;
-    }
-    #title{
-        max-width: 40px;
-        font-size: 24px;
-    }
-    .btnsBox{
-        display: grid;
-        padding-top: 50px;
-    }
-    #onlineBtn{
-        margin: 0px 0px 5px 0px;
-    }
-    #onsiteBtn{
-        margin: 5px 0px 0px 0px ;
-    }
-    .imgCard{
-        order: -1;
-    }
-}
+
 .kommentBox {
     display: flex;
     padding: 0px 40px 0px 40px;
@@ -132,13 +115,8 @@ body{
     max-width: 75px;
     max-height: 75px;
     object-fit: contain;
-    border-radius: 50px;
+    border-radius: 50%;
     padding: 20px;
-}
-@media(max-width: 768px){
-    .kommentBox{
-        display: grid;
-    }
 }
 #popularRightNowTitle{
     display: flex;
@@ -147,18 +125,6 @@ body{
 .sliderFelt{
     display: flex;
     justify-content: space-evenly;
-}
-@media(max-width: 768px){
-    .sliderFelt{
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding: 50px;
-    }
-    .viewCard{
-        scroll-snap-align: center;
-        margin: 0 10px;
-    }
 }
 .viewCard{
     display: grid;
@@ -182,7 +148,6 @@ body{
     justify-content: space-between;
 }
 .textCard>h3,.textCard>p,.stars-participants>p{
-    /* background-color: red; */
     margin: 0px;
 }
 .cartBtn{
@@ -203,9 +168,10 @@ body{
     justify-content: end;
 }
 .btns{
+    
     display: flex;
-    padding: 70px 10px 70px 10px;
     justify-content: center;
+    padding: 150px 20px 150px 20px;
 }
 .story{
     display: grid;
@@ -261,11 +227,61 @@ body{
 
 .foter{
     display: grid;
+    height: 460px;
     background-color: #011827;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: fit-content;
+    padding-bottom: 50px;
 }
-.foter{
-    padding: 100px;
-    color:white;
+
+
+@media(max-width: 768px){
+    .sliderFelt{
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 50px;
+    }
+    .viewCard{
+        scroll-snap-align: center;
+        margin: 0 10px;
+    }
+    .btns{
+        display: grid;
+    }
+    #title{
+        max-width: 40px;
+        font-size: 24px;
+    }
+    .btnsBox{
+        display: grid;
+        padding-top: 30px;
+        justify-content: cen;
+        transform: translateY(0px);
+    }
+    #onlineBtn{
+        margin: 0px 0px 5px 0px;
+    }
+    #onsiteBtn{
+        margin: 5px 0px 0px 0px ;
+        background-color: rgba(255, 255, 255, 0);
+        color: #36769D;
+    }
+    .imgCard{
+        order: -1;
+    }
+    .kommentBox{
+        display: grid;
+    }
+    .kommentText{
+        font-size: small;
+    }
+    .navBar li {
+        display: none;
+    }
+
 }
