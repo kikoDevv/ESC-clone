@@ -296,7 +296,7 @@ button {
     padding-bottom: 50px;
 }
 
-/*This blocks of code should be run when the display is <= 768px*/
+/*This blocks of codes should be run when the display is <= 768px*/
 @media(max-width: 768px) {
     .sliderSection {
         display: flex;
