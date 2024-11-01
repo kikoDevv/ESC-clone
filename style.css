@@ -54,15 +54,10 @@ body{
     font-size: 3vw;
     padding-left: 30px;
 }
-.imgBox{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.hackerImg{
+.headImg{
     max-height: none;
     width: 100%;
-    height: 100%;
+    max-height: 468px;
     object-fit: cover;
     position: relative;
 }
@@ -90,7 +85,7 @@ body{
     color:rgb(0, 0, 0);
     font-size:24px;
     border: none;
-    border-radius:px;
+    border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
 }
@@ -105,7 +100,7 @@ body{
 
 .kommentBox {
     display: flex;
-    padding: 0px 40px 0px 40px;
+    padding: 50px 20px 50px 20px;
 }
 .kommentCard{
     display: flex;
@@ -121,37 +116,62 @@ body{
 #popularRightNowTitle{
     display: flex;
     justify-content: center;
+    font-size: clamp(16px, 1vw + 1rem, 32px);
+    margin: 100px 0px 50px 0px;
 }
-.sliderFelt{
-    display: flex;
-    justify-content: space-evenly;
-}
-.viewCard{
+/*style for the slider section*/
+.sliderSection{
     display: grid;
-    max-width: 360px;
-    max-height: 440px;
-    box-shadow: 0px 0px 10px 0.1px;
-    border-radius: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow-x: auto; 
+    
+    
 }
-.slidImg{
-    max-width: 360px;
-    max-height: 440px;
-    object-fit: contain;
+.sliderImg{
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 15px 15px 0px 0px;
 }
-.textCard{
-    padding: 0px 20px 10px 20px;
+.card{
     display: grid;
+    margin: 20px;
+    border-radius: 15px;
+    min-width:fit-content;
+    scroll-snap-type: x mandatory;
+    box-shadow: 0px 10px 10px 0px black;
 }
-.stars-participants{
+.textAndBtn{
+    display: grid;
+    padding: 0px 15px 15px 15px;
+}
+.starsAndParticipant{
     display: flex;
     justify-content: space-between;
 }
-.textCard>h3,.textCard>p,.stars-participants>p{
+.fa-solid{
+    color: var(--redBtnColor);
+}
+.fa-regular{
+    color: var(--redBtnColor);
+}
+.starsAndParticipant p{
     margin: 0px;
 }
-.cartBtn{
-    background-color: red;
+/*style for the buttons inside the sliders card*/
+.cardBtn{
+    background-color: var(--redBtnColor); /* calling for the root color*/
+    max-width: fit-content;/*telling the button to not be bigger than the content size*/
+    border: none; /* dont want any border aroun the button*/
+    justify-self: end;/* telling the button to move all the way to the right side of the parent element which is card.*/
+    cursor: pointer;/*on hover cursor mouse will change form to pointer*/  
+}
+.cardBtn:hover{
+    background-color:aquamarine;
+    color: black;
+}
+
+.gridBtn{
+    background-color: var(--redBtnColor);
     padding: 10px;
     border-radius: 5px;
     color: white;
@@ -159,14 +179,11 @@ body{
     border: none;
     cursor: pointer;
 }
-.cartBtn:hover{
+.gridBtn:hover{
     background-color: rgb(121, 74, 74);
     color: rgb(0, 28, 239);
 }
-.textCard>div{
-    display: flex;
-    justify-content: end;
-}
+
 .btns{
     
     display: flex;
@@ -238,17 +255,15 @@ body{
     padding-bottom: 50px;
 }
 
-
+/*This blocks of code should be run when the display is <= 768px*/
 @media(max-width: 768px){
-    .sliderFelt{
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding: 50px;
+    .sliderSection{
+        display: flex;/*telling the sliderSection layout to be change from grid to flex*/
+        overflow-x: auto;/*when contant is overflowing should be scrollable*/
+        scroll-snap-type: x mandatory;/* snappy feeling of horizantal scrolling*/
     }
-    .viewCard{
-        scroll-snap-align: center;
-        margin: 0 10px;
+    .card{
+        scroll-snap-align: center;/*telling the each colum inside the sliderSection to be centered once scroll is finished*/
     }
     .btns{
         display: grid;
@@ -266,13 +281,21 @@ body{
     #onlineBtn{
         margin: 0px 0px 5px 0px;
     }
+    #onsiteBtn:hover{
+        background: none;
+    }
     #onsiteBtn{
         margin: 5px 0px 0px 0px ;
-        background-color: rgba(255, 255, 255, 0);
+        background: none;
+        border: none;
         color: #36769D;
+        text-decoration: underline;
     }
     .imgCard{
         order: -1;
+    }
+    .kommentCard:nth-child(1){
+        display:none;
     }
     .kommentBox{
         display: grid;
