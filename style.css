@@ -1,176 +1,209 @@
-:root{
+:root {
     --redBtnColor: #E3170A;
     --blueBtnColor: #8ACFE5;
-    --backgroundColor:#011827;
+    --backgroundColor: #011827;
 }
-body{
+
+body {
     margin: 0px;
     font-family: "Roboto";
 }
-.navBar ul{
+
+.navBar ul {
     display: flex;
     justify-content: center;
     margin: 0px;
     list-style-type: none;
-    color:white;
+    color: white;
     justify-content: space-evenly;
 }
-.navLi{
+
+.navLi {
     float: left;
     padding: 30px;
     border-radius: 10px;
 }
-.navLi:hover{
+
+.navLi:hover {
     background-color: rgb(183, 60, 60);
 }
-.headSection{
+
+.headSection {
     background-color: var(--backgroundColor);
 }
-#reqtangel{
+
+#reqtangel {
     display: flex;
     padding: 0px 0px 5px 5px;
-    background-color:var(--backgroundColor);
+    background-color: var(--backgroundColor);
     align-items: end;
     border: 5px solid white;
     border-radius: 15px;
     width: 113px;
     height: 67px;
 }
-.esc{
-    background-color:rgb(251, 251, 251);
+
+.esc {
+    background-color: rgb(251, 251, 251);
     padding: 8px;
     border-radius: 8px;
     margin: 0px;
 }
-#logo-title{
+
+#logo-title {
     display: flex;
     align-items: end;
     padding: 26px 0px 30px 27px;
 }
-#title{
+
+#title {
     margin: 0px;
-    color:white;
+    color: white;
     font-weight: 100;
     font-size: 3vw;
-    padding-left: 10px;
+    padding-left: 30px;
 }
-.headImg{
+
+.headImg {
     max-height: none;
     width: 100%;
     max-height: 468px;
     object-fit: cover;
     position: relative;
 }
-.btnsBox{
+
+.btnsHolder {
     display: flex;
     justify-content: center;
     left: 50%;
     transform: translateY(-50%);
 }
-.onlineBtn{
+
+.onlineBtn {
     padding: 17px;
     background-color: var(--redBtnColor);
-    color:white;
-    font-size:24px;
+    color: white;
+    font-size: 24px;
     border: none;
-    border-radius:5px;
+    border-radius: 5px;
     cursor: pointer;
     margin-right: 10px;
     max-width: fit-content;
     justify-self: right;
 }
-.onsiteBtn{
+
+.onsiteBtn {
     padding: 17px;
     background-color: var(--blueBtnColor);
-    color:rgb(0, 0, 0);
-    font-size:24px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
 }
-.onsiteBtn:hover{
+
+.onsiteBtn:hover {
     background-color: rgb(56, 113, 144);
     color: rgb(4, 251, 251);
 }
-.onlineBtn:hover{
+
+.onlineBtn:hover {
     background-color: rgb(107, 61, 61);
     color: rgb(255, 0, 0);
 }
 
-.kommentBox {
+.commentBox {
     display: flex;
     padding: 50px 20px 50px 20px;
 }
-.kommentCard{
+
+.commentCard {
     display: flex;
-    object-fit:cover;
+    object-fit: cover;
 }
-.kommenterImg{
+
+.commenterImg {
     max-width: 75px;
     max-height: 75px;
     object-fit: contain;
     border-radius: 50%;
     padding: 20px;
 }
-#popularRightNowTitle{
+
+#popularRightNowTitle {
     display: flex;
     justify-content: center;
     font-size: clamp(16px, 1vw + 1rem, 32px);
     margin: 100px 0px 50px 0px;
 }
+
 /*style for the slider section*/
-.sliderSection{
+.sliderSection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    overflow-x: auto; 
-    
-    
+    overflow-x: auto;
+
+
 }
-.sliderImg{
+
+.sliderImg {
     max-width: 100%;
     max-height: 100%;
     border-radius: 15px 15px 0px 0px;
 }
-.card{
+
+.card {
     display: grid;
     margin: 20px;
     border-radius: 15px;
-    min-width:fit-content;
+    min-width: fit-content;
     scroll-snap-type: x mandatory;
     box-shadow: 0px 10px 10px 0px black;
 }
-.textAndBtn{
+
+.textAndBtn {
     display: grid;
     padding: 0px 15px 15px 15px;
 }
-.starsAndParticipant{
+
+.starsAndParticipant {
     display: flex;
     justify-content: space-between;
 }
-.fa-solid{
+
+.fa-solid {
     color: var(--redBtnColor);
 }
-.fa-regular{
+
+.fa-regular {
     color: var(--redBtnColor);
 }
-.starsAndParticipant p{
+
+.starsAndParticipant p {
     margin: 0px;
 }
+
 /*style for the buttons inside the sliders card*/
-.cardBtn{
-    background-color: var(--redBtnColor); /* calling for the root color*/
-    max-width: fit-content;/*telling the button to not be bigger than the content size*/
-    border: none; /* dont want any border aroun the button*/
-    justify-self: end;/* telling the button to move all the way to the right side of the parent element which is card.*/
-    cursor: pointer;/*on hover cursor mouse will change form to pointer*/  
+.cardBtn {
+    background-color: var(--redBtnColor);
+    /* calling for the root color*/
+    max-width: fit-content;
+    /*telling the button to not be bigger than the content size*/
+    border: none;
+    /* dont want any border aroun the button*/
+    justify-self: end;
+    /* telling the button to move all the way to the right side of the parent element which is card.*/
+    cursor: pointer;
+    /*on hover cursor mouse will change form to pointer*/
 }
-.cardBtn:hover{
-    background-color:aquamarine;
+
+.cardBtn:hover {
+    background-color: aquamarine;
     color: black;
 }
 
-.gridBtn{
+.gridBtn {
     background-color: var(--redBtnColor);
     padding: 10px;
     border-radius: 5px;
@@ -179,31 +212,34 @@ body{
     border: none;
     cursor: pointer;
 }
-.gridBtn:hover{
+
+.gridBtn:hover {
     background-color: rgb(121, 74, 74);
     color: rgb(0, 28, 239);
 }
 
-.btns{
-    
+.btns {
     display: flex;
     justify-content: center;
     padding: 150px 20px 150px 20px;
 }
-.story{
+
+.story {
     display: grid;
     background-color: #011827;
     height: 500px;
     width: 100%;
     align-content: center;
 }
-.story>div{
+
+.story>div {
     display: flex;
     justify-content: center;
     padding: 50px;
 }
-.story>div button{
-    background-color:#011827;
+
+.story>div button {
+    background-color: #011827;
     color: white;
     border-radius: 10px;
     padding: 20px;
@@ -211,38 +247,43 @@ body{
     font-weight: bold;
     border-color: white;
 }
-.story>div p{
-    color:white;
+
+.story>div p {
+    color: white;
     font-size: 2vw;
 }
 
 
 
 
-.gridItem{
+.gridItem {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.imgCard{
+
+.imgCard {
     max-width: 100%;
 }
-.infoCard{
+
+.infoCard {
     display: grid;
     align-content: space-evenly;
     padding: 10px 100px 10px 100px;
 }
-.infoCard.div,button{
-    padding:15px;
+
+.infoCard.div,
+button {
+    padding: 15px;
     border-color: white;
     border-radius: 10px;
     background-color: red;
-    color:white;
+    color: white;
     font-weight: bold;
 }
 
 
 
-.foter{
+.foter {
     display: grid;
     height: 460px;
     background-color: #011827;
@@ -256,29 +297,38 @@ body{
 }
 
 /*This blocks of code should be run when the display is <= 768px*/
-@media(max-width: 768px){
-    .sliderSection{
-        display: flex;/*telling the sliderSection layout to be change from grid to flex*/
-        overflow-x: auto;/*when contant is overflowing should be scrollable*/
-        scroll-snap-type: x mandatory;/* snappy feeling of horizantal scrolling*/
+@media(max-width: 768px) {
+    .sliderSection {
+        display: flex;
+        /*telling the sliderSection layout to be change from grid to flex*/
+        overflow-x: auto;
+        /*when contant is overflowing should be scrollable*/
+        scroll-snap-type: x mandatory;
+        /* snappy feeling of horizantal scrolling*/
     }
-    .card{
-        scroll-snap-align: center;/*telling the each colum inside the sliderSection to be centered once scroll is finished*/
+
+    .card {
+        scroll-snap-align: center;
+        /*telling the each colum inside the sliderSection to be centered once scroll is finished*/
     }
-    .btns{
+
+    .btns {
         display: grid;
     }
-    #title{
+
+    #title {
         max-width: 40px;
         font-size: 24px;
     }
-    .btnsBox{
+
+    .btnsHolder {
         display: grid;
         padding-top: 30px;
         justify-content: center;
         transform: translateY(0px);
     }
-    .onlineBtn{
+
+    .onlineBtn {
         margin: 0px 0px 5px 0px;
         background: none;
         text-decoration: underline;
@@ -286,31 +336,39 @@ body{
         margin-top: 10px;
         color: var(--blueBtnColor)
     }
-    .onsiteBtn{
+
+    .onsiteBtn {
         background-color: var(--blueBtnColor);
-        margin: 5px 0px 0px 0px ;
+        margin: 5px 0px 0px 0px;
         border: none;
         color: black;
         order: -1;
     }
-    .onsiteBtn:hover{
+
+    .onsiteBtn:hover {
         background: none;
     }
-    .imgCard{
+
+    .imgCard {
         order: -1;
     }
-    .infoCard{
-        padding: 10px 0px 50px 10px;
+
+    .infoCard {
+        padding: 10px 10px 30px 10px;
     }
-    .kommentCard:nth-child(1){
-        display:none;
+
+    .commentCard:nth-child(1) {
+        display: none;
     }
-    .kommentBox{
+
+    .commentBox {
         display: grid;
     }
-    .kommentText{
+
+    .commentText {
         font-size: small;
     }
+
     .navBar li {
         display: none;
     }
