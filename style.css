@@ -304,7 +304,7 @@ button {
         overflow-x: auto;
         /*when contant is overflowing should be scrollable*/
         scroll-snap-type: x mandatory;
-        /* snappy feeling of horizantal scrolling*/
+        scroll-snap-align: center;/*alig in content in center when scrolling is finished*/
     }
 
     .card {
@@ -346,10 +346,11 @@ button {
     }
 
     .onsiteBtn:hover {
-        background: none;
+        background: blue;
     }
     .onlineBtn:hover{
-        background-color: none;
+        background-color: white;
+        color: none;
     }
     .imgCard {
         order: -1;
