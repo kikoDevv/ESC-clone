@@ -1,21 +1,21 @@
+/*root colors from figma design for buttons and background.*/
 :root {
     --redBtnColor: #E3170A;
     --blueBtnColor: #8ACFE5;
     --backgroundColor: #011827;
 }
-
 body {
     margin: 0px;
-    font-family: "Roboto";
-}
+    font-family: "Roboto"; /*font from figma design*/
 
+}
 .navBar ul {
-    display: flex;
-    justify-content: center;
-    margin: 0px;
+    display: flex;/*telling contants to stay horizontal*/
+    justify-content: center;/*stay in center*/
+    margin: 0px;/*no marign, margin: none; dont work for me*/
     list-style-type: none;
-    color: white;
-    justify-content: space-evenly;
+    color: white;/*any main color in ul should be white*/
+    justify-content: space-evenly;/*space evently between contens*/
 }
 
 .navLi {
@@ -25,7 +25,7 @@ body {
 }
 
 .navLi:hover {
-    background-color: rgb(183, 60, 60);
+    background-color:var(--redBtnColor);/*using universal color navigatin hover*/
 }
 
 .headSection {
@@ -36,10 +36,10 @@ body {
     display: flex;
     padding: 0px 0px 5px 5px;
     background-color: var(--backgroundColor);
-    align-items: end;
-    border: 5px solid white;
+    align-items: end; /*telling contents to stay att the end of layout*/
+    border: 5px solid white; /*tellin the regtangel to have a border*/
     border-radius: 15px;
-    width: 113px;
+    width: 113px; 
     height: 67px;
 }
 
@@ -59,24 +59,24 @@ body {
 #title {
     margin: 0px;
     color: white;
-    font-weight: 100;
+    font-weight: 100; /*font boldines*/
     font-size: 3vw;
     padding-left: 30px;
 }
 
 .headImg {
     max-height: none;
-    width: 100%;
+    width: 100%;/*telling the headImg not overflow from parents*/
     max-height: 468px;
-    object-fit: cover;
-    position: relative;
+    object-fit: cover; /*stay inside layout*/
+    position: relative;/*will use to offset property*/
 }
 
 .btnsHolder {
     display: flex;
     justify-content: center;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); /*move the btnHolder vertically*/
 }
 
 .onlineBtn {
@@ -89,7 +89,7 @@ body {
     cursor: pointer;
     margin-right: 10px;
     max-width: fit-content;
-    justify-self: right;
+    justify-self: right; /*telling the onlineBtn to move its seft horizontally to right*/
 }
 
 .onsiteBtn {
@@ -100,7 +100,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 10px;/*take distance by 10px but only leftside*/
 }
 
 .onsiteBtn:hover {
@@ -115,7 +115,7 @@ body {
 
 .commentBox {
     display: flex;
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px 50px 20px;/*padding for all sides*/
 }
 
 .commentCard {
@@ -124,7 +124,7 @@ body {
 }
 
 .commenterImg {
-    max-width: 75px;
+    max-width: 75px;/*width shoult not go more than 75px*/
     max-height: 75px;
     object-fit: contain;
     border-radius: 50%;
@@ -140,9 +140,9 @@ body {
 
 /*style for the slider section*/
 .sliderSection {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    overflow-x: auto;
+    display: grid;/*telling contents to stay vertically*/
+    grid-template-columns: 1fr 1fr 1fr;/*grid should have 3 columns all the same size*/
+    overflow-x: auto; /*if overflow, use scroll*/
 
 
 }
@@ -158,7 +158,7 @@ body {
     margin: 20px;
     border-radius: 15px;
     min-width: fit-content;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;/*snappy feeling when scrolling*/
     box-shadow: 0px 10px 10px 0px black;
 }
 
@@ -348,7 +348,9 @@ button {
     .onsiteBtn:hover {
         background: none;
     }
-
+    .onlineBtn:hover{
+        background-color: none;
+    }
     .imgCard {
         order: -1;
     }
@@ -363,6 +365,8 @@ button {
 
     .commentBox {
         display: grid;
+        justify-content: center;
+        padding: 50px 10px 0px 0px;
     }
 
     .commentText {
