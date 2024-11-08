@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESC Nasrolla 😎</title>
-    <!--Link to my stylesheet and fonts-->
+    <!--Link to my stylesheet, fonts and files-->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -33,7 +33,7 @@ Body
             </div>
             <h1 id="title">Hacker Escape Rooms</h1>
             <div class="menuIconHolder">
-                <div class="menuIconItems">
+                <div class="menuIcon">
                     <span>.</span>
                     <span>.</span>
                     <span>.</span>
@@ -41,7 +41,9 @@ Body
             </div>
         </div>
         <nav class="navBar">
-            <ul>
+            <ul class="navBarItems">
+                <button id="closeMenuBtn" class="fa-solid fa-xmark fa-2xl">
+                </button>
                 <li class="navLi">Play online</li>
                 <li class="navLi">Play on-site</li>
                 <li class="navLi">The story</li>
@@ -297,6 +299,8 @@ Body
         </div>
 
     </footer>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
