@@ -446,6 +446,9 @@ button {
     }
 
     .navBar{
+        display: none;
+    }
+    .navBar.active{
         display: flex;
         position: absolute;
         z-index: 2;
@@ -455,13 +458,6 @@ button {
         justify-content: center;
         align-items: center;
         background-color: rgba(255, 255, 255, 0.488);
-    }
-
-    .navBar{
-        display: none;
-    }
-    .navBar.active{
-        display: flex;
     }
     .navBarItems {
         display: grid;
@@ -490,7 +486,7 @@ button {
     #closeMenuBtn{
         display: block;
     }
-    .closeMenuBtn{
+    #closeMenuBtn{
         display: block;
         position: absolute;
         justify-self: end;

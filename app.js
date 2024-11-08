@@ -8,4 +8,5 @@ menuIcon.addEventListener("click",()=>{
 });
 closeMenuBtn.addEventListener("click",()=>{
     navBar.classList.toggle("active");
+
 });
