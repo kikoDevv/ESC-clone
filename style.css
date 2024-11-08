@@ -5,18 +5,26 @@
     --backgroundColor: #011827;
     --HoverColor: #36769D;
 }
+
 body {
     margin: 0px;
-    font-family: "Roboto"; /*font from figma design*/
+    font-family: "Roboto";
+    /*font from figma design*/
 
 }
+
 .navBar ul {
-    display: flex;/*telling contants to stay horizontal*/
-    justify-content: center;/*stay in center*/
-    margin: 0px;/*no marign, margin: none; dont work for me*/
+    display: flex;
+    /*telling contants to stay horizontal*/
+    justify-content: center;
+    /*stay in center*/
+    margin: 0px;
+    /*no marign, margin: none; dont work for me*/
     list-style-type: none;
-    color: white;/*any main color in ul should be white*/
-    justify-content: space-evenly;/*space evently between contens*/
+    color: white;
+    /*any main color in ul should be white*/
+    justify-content: space-evenly;
+    /*space evently between contens*/
 }
 
 .navLi {
@@ -26,7 +34,8 @@ body {
 }
 
 .navLi:hover {
-    color:var(--HoverColor);/*using universal color navigatin hover*/
+    color: var(--HoverColor);
+    /*using universal color navigatin hover*/
     user-select: none;
     cursor: pointer;
 }
@@ -39,10 +48,12 @@ body {
     display: flex;
     padding: 0px 0px 5px 5px;
     background-color: var(--backgroundColor);
-    align-items: end; /*telling contents to stay att the end of layout*/
-    border: 5px solid white; /*tellin the regtangel to have a border*/
+    align-items: end;
+    /*telling contents to stay att the end of layout*/
+    border: 5px solid white;
+    /*tellin the regtangel to have a border*/
     border-radius: 15px;
-    width: 113px; 
+    width: 113px;
     height: 67px;
 }
 
@@ -58,8 +69,9 @@ body {
     align-items: end;
     padding: 26px 0px 30px 27px;
 }
+
 /*Hamburger menue*/
-.menuIconHolder{
+.menuIconHolder {
     display: none;
 }
 
@@ -67,24 +79,29 @@ body {
 #title {
     margin: 0px;
     color: white;
-    font-weight: 100; /*font boldines*/
+    font-weight: 100;
+    /*font boldines*/
     font-size: 3vw;
     padding-left: 30px;
 }
 
 .headImg {
     max-height: none;
-    width: 100%;/*telling the headImg not overflow from parents*/
+    width: 100%;
+    /*telling the headImg not overflow from parents*/
     max-height: 468px;
-    object-fit: cover; /*stay inside layout*/
-    position: relative;/*will use to offset property*/
+    object-fit: cover;
+    /*stay inside layout*/
+    position: relative;
+    /*will use to offset property*/
 }
 
 .btnsHolder {
     display: flex;
     justify-content: center;
     left: 50%;
-    transform: translateY(-50%); /*move the btnHolder vertically*/
+    transform: translateY(-50%);
+    /*move the btnHolder vertically*/
 }
 
 .onlineBtn {
@@ -97,7 +114,8 @@ body {
     cursor: pointer;
     margin-right: 10px;
     max-width: fit-content;
-    justify-self: right; /*telling the onlineBtn to move its seft horizontally to right*/
+    justify-self: right;
+    /*telling the onlineBtn to move its seft horizontally to right*/
 }
 
 .onsiteBtn {
@@ -108,7 +126,8 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;/*take distance by 10px but only leftside*/
+    margin-left: 10px;
+    /*take distance by 10px but only leftside*/
 }
 
 .onsiteBtn:hover {
@@ -123,7 +142,8 @@ body {
 
 .commentBox {
     display: flex;
-    padding: 50px 20px 50px 20px;/*padding for all sides*/
+    padding: 50px 20px 50px 20px;
+    /*padding for all sides*/
 }
 
 .commentCard {
@@ -132,7 +152,8 @@ body {
 }
 
 .commenterImg {
-    max-width: 75px;/*width shoult not go more than 75px*/
+    max-width: 75px;
+    /*width shoult not go more than 75px*/
     max-height: 75px;
     object-fit: contain;
     border-radius: 50%;
@@ -148,9 +169,12 @@ body {
 
 /*style for the slider section*/
 .sliderSection {
-    display: grid;/*telling contents to stay vertically*/
-    grid-template-columns: 1fr 1fr 1fr;/*grid should have 3 columns all the same size*/
-    overflow-x: auto; /*if overflow, use scroll*/
+    display: grid;
+    /*telling contents to stay vertically*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid should have 3 columns all the same size*/
+    overflow-x: auto;
+    /*if overflow, use scroll*/
 
 
 }
@@ -166,7 +190,8 @@ body {
     margin: 20px;
     border-radius: 15px;
     min-width: fit-content;
-    scroll-snap-type: x mandatory;/*snappy feeling when scrolling*/
+    scroll-snap-type: x mandatory;
+    /*snappy feeling when scrolling*/
     box-shadow: 0px 10px 10px 0px black;
 }
 
@@ -288,6 +313,7 @@ button {
     color: white;
     font-weight: bold;
 }
+
 .foter {
     display: grid;
     height: 460px;
@@ -300,22 +326,26 @@ button {
     height: fit-content;
     padding-bottom: 50px;
 }
+
 /*This blocks of codes should be run when the display is <= 768px*/
 @media(max-width: 768px) {
+
     /*Hamburger menue*/
-    .menuIconHolder{
+    .menuIconHolder {
         display: flex;
         width: 100%;
         height: 100%;
         justify-content: end;
         padding-bottom: 40px;
     }
-    .menuIconItems{
+
+    .menuIconItems {
         display: grid;
         gap: 5px;
         padding-right: 20px;
     }
-    .menuIconHolder span{
+
+    .menuIconHolder span {
         background-color: red;
         height: 6px;
         width: 51px;
@@ -323,14 +353,15 @@ button {
     }
 
 
-    
+
     .sliderSection {
         display: flex;
         /*telling the sliderSection layout to be change from grid to flex*/
         overflow-x: auto;
         /*when contant is overflowing should be scrollable*/
         scroll-snap-type: x mandatory;
-        scroll-snap-align: center;/*alig in content in center when scrolling is finished*/
+        scroll-snap-align: center;
+        /*alig in content in center when scrolling is finished*/
     }
 
     .card {
@@ -374,10 +405,12 @@ button {
     .onsiteBtn:hover {
         background: blue;
     }
-    .onlineBtn:hover{
+
+    .onlineBtn:hover {
         background-color: white;
         color: none;
     }
+
     .imgCard {
         order: -1;
     }
@@ -399,38 +432,37 @@ button {
     .commentText {
         font-size: small;
     }
-
-
-
-
-
-
-    .navBar{
+    .navBar {
         display: flex;
         position: absolute;
         z-index: 2;
         top: 0;
-        opacity: 0.9;
         min-width: 100%;
         min-height: 100%;
         justify-content: center;
         align-items: center;
-        background-color: red;
+        background-color: rgb(255, 255, 255);
     }
-    .navBar ul{
+
+    .navBar ul {
         display: grid;
-        padding: 0px;
-        background-color: aliceblue;
+        background-color: var(--backgroundColor);
         width: 100%;
         height: 100vh;
         margin: 20px;
+        padding: 0px;
+        align-content: center;
+        box-shadow: 0px 0px 30px 20px white;
     }
-    .navLi{
-        color: black;
+
+    .navLi {
+        font-size: x-large;
+        font-weight: bold;
+        /* background-color:black; */
+        color: white;
+        max-height: fit-content;
+        max-width: fit-content;
+        place-self: center;
     }
-
-
-
-
 
 }
