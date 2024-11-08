@@ -400,8 +400,37 @@ button {
         font-size: small;
     }
 
-    .navBar li {
-        display: none;
+
+
+
+
+
+    .navBar{
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        opacity: 0.9;
+        min-width: 100%;
+        min-height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
     }
+    .navBar ul{
+        display: grid;
+        padding: 0px;
+        background-color: aliceblue;
+        width: 100%;
+        height: 100vh;
+        margin: 20px;
+    }
+    .navLi{
+        color: black;
+    }
+
+
+
+
 
 }
