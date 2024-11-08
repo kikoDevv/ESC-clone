@@ -483,11 +483,9 @@ button {
 
 
 
+    
     #closeMenuBtn{
-        display: block;
-    }
-    #closeMenuBtn{
-        display: block;
+        display: flex;
         position: absolute;
         justify-self: end;
         padding: 20px;
