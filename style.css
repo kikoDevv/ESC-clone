@@ -286,9 +286,6 @@ body {
     font-size: 2vw;
 }
 
-
-
-
 .gridItem {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -326,19 +323,23 @@ button {
     height: fit-content;
     padding-bottom: 50px;
 }
-#closeMenuBtn{
+
+#closeMenuBtn {
     display: none;
 }
+
 /*This blocks of codes should be run when the display is <= 768px*/
 @media(max-width: 768px) {
-    #reqtangel{
+    #reqtangel {
         height: fit-content;
-       padding: 30px 0px 5px 5px;
+        padding: 30px 0px 5px 5px;
 
     }
-    .esc{
+
+    .esc {
         padding: 7px;
     }
+
     /*Hamburger menue*/
     .menuIconHolder {
         display: flex;
@@ -350,7 +351,7 @@ button {
         top: 30px;
     }
 
-    .menuIcon{
+    .menuIcon {
         display: grid;
         gap: 5px;
         max-width: fit-content;
@@ -445,10 +446,11 @@ button {
         font-size: small;
     }
 
-    .navBar{
+    .navBar {
         display: none;
     }
-    .navBar.active{
+
+    .navBar.active {
         display: flex;
         position: absolute;
         z-index: 2;
@@ -459,6 +461,7 @@ button {
         align-items: center;
         background-color: rgba(255, 255, 255, 0.488);
     }
+
     .navBarItems {
         display: grid;
         background-color: var(--backgroundColor);
@@ -470,6 +473,7 @@ button {
         animation: fadeIn 0.3s ease-in-out;
         /* box-shadow: 0px 0px 30px 20px white; */
     }
+
     .navLi {
         font-size: x-large;
         font-weight: bold;
@@ -480,11 +484,7 @@ button {
         place-self: center;
     }
 
-
-
-
-    
-    #closeMenuBtn{
+    #closeMenuBtn {
         display: flex;
         position: absolute;
         justify-self: end;
@@ -496,13 +496,14 @@ button {
     }
 }
 
-
+/*animation for and transition for hamburger menu*/
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0;
         transform: scale(0.97);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: scale(1);
     }
