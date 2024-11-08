@@ -1,6 +1,6 @@
 menuIcon = document.querySelector(".menuIcon");
 navBar = document.querySelector(".navBar");
-closeMenuBtn = document.querySelector("#closeMenuBtn");
+closeMenuBtn = document.querySelector(".fa-xmark");
 
 menuIcon.addEventListener("click",()=>{
     console.log("menu clicked!!");

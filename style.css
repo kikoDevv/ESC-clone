@@ -326,9 +326,6 @@ button {
     height: fit-content;
     padding-bottom: 50px;
 }
-#closeMenuBtn{
-    display: none;
-}
 /*This blocks of codes should be run when the display is <= 768px*/
 @media(max-width: 768px) {
     #reqtangel{
@@ -483,16 +480,14 @@ button {
         max-width: fit-content;
         place-self: center;
     }
-    #closeMenuBtn{
-        display: block;
-        /* right: 5%; */
-    }
+
     .fa-xmark{
+        display: block;
         position: absolute;
-        padding: 20px;
         justify-self: end;
-        color: white;
+        padding: 20px;
         border: none;
+        color: white;
         background: none;
     }
 }
