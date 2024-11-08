@@ -485,12 +485,12 @@ button {
     }
     #closeMenuBtn{
         display: block;
-
+        /* right: 5%; */
     }
     .fa-xmark{
         position: absolute;
-        justify-self: end;
         padding: 20px;
+        justify-self: end;
         color: white;
         border: none;
         background: none;
