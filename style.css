@@ -326,6 +326,9 @@ button {
     height: fit-content;
     padding-bottom: 50px;
 }
+#closeMenuBtn{
+    display: none;
+}
 /*This blocks of codes should be run when the display is <= 768px*/
 @media(max-width: 768px) {
     #reqtangel{
@@ -458,7 +461,7 @@ button {
         display: none;
     }
     .navBar.active{
-        display: block;
+        display: flex;
     }
     .navBarItems {
         display: grid;
@@ -481,7 +484,13 @@ button {
         place-self: center;
     }
 
-    .fa-xmark{
+
+
+
+    #closeMenuBtn{
+        display: block;
+    }
+    .closeMenuBtn{
         display: block;
         position: absolute;
         justify-self: end;
