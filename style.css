@@ -82,7 +82,7 @@ body {
     font-weight: 100;
     font-weight: bold;
     font-size: 3vw;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 5px;
 }
 
 .headImg {
@@ -331,7 +331,14 @@ button {
 }
 /*This blocks of codes should be run when the display is <= 768px*/
 @media(max-width: 768px) {
+    #reqtangel{
+        height: fit-content;
+       padding: 30px 30px 5px 5px;
 
+    }
+    .esc{
+        padding: 7px;
+    }
     /*Hamburger menue*/
     .menuIconHolder {
         display: block;
@@ -339,7 +346,7 @@ button {
         width: 100%;
         height: 100%;
         justify-content: end;
-        padding-bottom: 40px;
+        padding-bottom: 40px;    
     }
 
     .menuIcon{
@@ -377,8 +384,8 @@ button {
     }
 
     #title {
-        max-width: 40px;
-        font-size: 24px;
+        font-size: 2.7vh;
+        margin: 0px;
     }
 
     .btnsHolder {
