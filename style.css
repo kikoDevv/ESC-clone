@@ -487,8 +487,8 @@ button {
     #closeMenuBtn{
         display: flex;
         position: absolute;
-        /* justify-self: end; */
-        right: 10px;
+        justify-self: end;
+        /* right: 10px; */
         padding: 20px;
         border: none;
         color: white;
